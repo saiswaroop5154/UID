@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<head>
+   <title>
+      Places to visit in India
+   </title>
+</head> 
+<body>
+ <h2><font face="tahoma" color="">Dream Your Next Trip</h2></font>
+   
+</body>
