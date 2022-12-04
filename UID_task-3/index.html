@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<head>
+     <title> registration form </title>
+</head>
+<body>
+    <style>
+         body {
+         background-image:
+	     url("logo6.jpg");
+	     background-repeat: no-repeat;
+	     background-size: 100% 32%;
+	     filter: brightness(125%);
+	     opacity:1.5;
+	     }
+    </style>
+    <table>
+        <tr>
+           <th width=270 height=10>
+              <img src="logo5.png" height="70" width="250"> 
+           </th >
+	       <th width=900 height=10>
+              <pre><h1><font size="8" color="#ECF0F1"> Amrita</font><font size="8" color="#E50F56"> CyberNation </font></h1> <font size="6" color="#E50F56"> (ACN 2022)</font></pre>
+           </th>
+	       <th rowspan=2 width=400>
+	          <pre><h2><font color="#E50F56"> Inauguration & Keynote Address by </font></h2><h2><font color="#ECF0F1">Dr.G.ATHITHAN </font></h2></font><pre><h2><font color="#ECF0F1">Former Director General, DRDO  </font></h2></font>
+	       </th>
+        </tr>
+        <tr>
+           <th>
+	           &nbsp;
+	       </th>
+	       <th>
+	         <pre><h2><font color="#ECF0F1" >-Towards self-reliance in Strenthing of our CyberSpace </font></h2> <font size="8" color="#ECF0F1">October 2022 </font></pre>
+	       </th>
+        </tr>
+    </table><br><br>
+ 
+ <fieldset>    
+    <legend align=center><font color=""><h2>Register Here</h2></legend>
+	<form>
+	<div class="two-cols">
+      <label>
+        First name *</label>
+        <input type="text" maxlenght=35 minlenght=5 placeholder="Enter your firstname" name="First name" required>
+      
+      <label>&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last name *</label>
+        <input type="text" name="last name" maxlenght=35 minlenght=5  placeholder="Enter your lastname" required><br>
+      
+    </div><br>
+    <div class="two-cols">
+      <label> Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" placeholder="@gmail.com"name="mail" width=1500><br><br>
+	  <label>
+        Phone * </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="tel" placeholder="+91 xxxxxxxxxx" name="Phone" required><br><br>
+      <label>Date of birth  </label>
+        <input type="date" name="Date of birth">
+    </div>
+ <table align=right border>
+	    <tr>
+		   <th width=150 height=10><font size="4" color="#E50F56"> Registration Fees </font> </th>
+		   <th width=150 height=10><font size="4" color="#E50F56">(per day)</font> </th>
+		</tr>
+		<tr>
+		   <td>Students</td>
+		   <td>: RS.200
+		</tr>
+		<tr>
+		   <td>Research Scholar/Faculty</td>
+		   <td>: RS.500
+		</tr>
+		<tr>
+		   <td> Industry/Others </td>
+		   <td>: RS.1000
+		</tr>
+ </table>
+    <br>
+		<label> Occupation </label>
+        <input type="radio" name="occ" id="student">
+		 <label for= "student"> Student </label>
+		 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		 <input type="radio" name="occ" id="prof">
+		 <label for= "prof"> Research Scholar/Faculty </label> <br>
+		 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		 <input type="radio" name="occ" id="industry">
+		 <label for= "industry"> Industry/Others </label> <br>
+    <br>
+
+    <div class="two-cols">
+      <label>
+        Gender&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="radio" name="gender" width=1500>M&nbsp;&nbsp;<input type="radio" name="gender" width=1500>F
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+	
+    <div><br>
+     <label>
+         Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text"  placeholder="lane 1 address" name="address" required><br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"  placeholder="lane 2 address" name="address" required>
+    <br><br>
+	   <label>  City   </label>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="City">
+       <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                State &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" name="State"> 
+		<label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               ZIP Code   </label>   &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="ZIP">
+    </div><br>
+    
+    <label> Aadhar No.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="tel" placeholder="xxxx xxxx xxxx" name="aadhar" required><br><br> 
+		<label for ="fileupload">Upload your Aadhar card  &nbsp;</label>
+	    <input type="file" name="upload" id="fileupload">
+		 <br><br>
+		 
+  
+      <label>  Select Event  </label>
+		 <select name="event" id="event">
+		       <option value="none" selected disabled hidden> Select an Event </option>
+		       <option value="con" > CYBER CONCLAVE </option>
+			   <option value="fest"> CYBER TECH FEST </option>
+			   <option value="abyan"> CYBER ABHYAN</option>
+			   <option value="meet"> CYBER INDUSTRIAL MEET </option>
+		</select>
+        <br><br>
+	
+    
+    <div class="two-cols"> 
+       <label>   Password  </label>    
+       		&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="password" minlength="4" maxlength="15" placeholder="Enter Password" name="password">
+      <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Confirm Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="password" name="password"> <label>
+        
+    </div><br>
+	
+	  <input type="submit" value="submit">
+      <input type="reset" value="Reset">
+  </form>
+  </fieldset>
+</body>
+</html>
+
+
+   
+  
