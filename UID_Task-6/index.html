@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="calc.css">
+    <title>Weight Calculator</title>
+</head>
+<body>
+    <div class="card">
+        <h1>Weight Calculator</h1>
+        <form >
+            <div class="input-item">
+                <label for="amount" class="label"> Enter your weight on Earth : </label>
+                <input type="text" id="amount">
+            </div>
+
+            <div class="input-item">
+                <label for="discount-percentage" class="label">Select Planet :</label>
+                <select name="percentage" id="discount-percentage">
+				    <option value="27.01">SUN</option>
+                    <option value="0.38">MERCURY</option>
+                    <option value="0.91">VENUS</option>
+                    <option value="0.38">MARS</option>
+                    <option value="2.34">JUPITER</option>
+                    <option value="1.06">SATURN</option>
+                    <option value="0.92">URANUS</option>
+					<option value="1.19">NEPTUNE</option>
+                </select>
+            </div>
+
+            <div class="input-item">
+                <label for="discount-amount" class="label"> Gravity(m/s^2)  : </label>
+                <input type="text" id="discount-amount" disabled>
+            </div>
+            
+            <div class="input-item">
+                <label for="pay" aria-disabled="true" class="label"> Weight in selected planet :</label>
+                <input type="text" id="pay" disabled>
+            </div> 
+
+            <button type="submit" class="calculate">calculate</button>
+            <input type="reset" value="reset" onClick="window.location.reload()" class="reset">
+        </form>
+    </div>
+
+    <script src="calc.js"></script>
+</body>
+</html>
+
