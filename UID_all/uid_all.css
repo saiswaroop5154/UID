@@ -1,0 +1,41 @@
+p {
+	font-family: Lucida Sans Unicode;
+	font-size: 30px;
+	color: black;
+	text-align: center;
+	background-image: linear-gradient(to left,#ffafbd ,#ffc3a0);
+	}
+	
+body {
+	background-repeat : no-repeat;
+}
+.img{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	column-gap: 5px;
+}
+		
+div.uid1 {
+	width: 250px;
+	box-shadow: 0 4px 8px 0;
+	text-align: center;
+	margin-top: 80px;
+	margin-left: 40px;
+}
+div.container{
+  padding: 10px;
+  text-align: left;
+  font-family: Lucida Sans Unicode;
+  background-color:white;
+}
+div.uid2 {
+	width: 250px;
+	box-shadow: 0 4px 8px 0;
+	text-align: center;
+	margin-top: 80px;
+	margin-left: 40px;
+}
+
+
+
+
