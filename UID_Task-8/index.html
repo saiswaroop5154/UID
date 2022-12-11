@@ -1,0 +1,189 @@
+<!DOCTYPE hmtl>
+    <head>
+            <style>  
+              .ab{
+                background-color:#aef900;
+	            color: rgb(255, 0, 0);
+	            text-decoration: none;
+	            border: 2px solid transparent;
+	            font-weight: bold;
+	            padding: 13px 30px;
+	            border-radius: 30px;
+	            transition: .4s; 
+              }
+                div>a{
+                    padding-left: 12px;
+
+                }
+                .txt{
+                    text-decoration: none;
+                    color: rgb(0, 0, 0);
+                }
+                a.txt:hover{
+                    color: #ffffff;
+                }
+    p {
+	font-family: Lucida Sans Unicode;
+	font-size: 30px;
+	color: black;
+	text-align: center;
+	background-image: linear-gradient(to left,#ffafbd ,#ffc3a0);
+	}
+	
+body {
+	background-repeat : no-repeat;
+}
+.img{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	column-gap: 5px;
+}
+		
+div.uid1 {
+	width: 250px;
+	box-shadow: 0 4px 8px 0;
+	text-align: center;
+	margin-top: 80px;
+	margin-left: 40px;
+}
+div.container{
+  padding: 10px;
+  text-align: left;
+  font-family: Lucida Sans Unicode;
+  background-color:white;
+}
+div.uid2 {
+	width: 250px;
+	box-shadow: 0 4px 8px 0;
+	text-align: center;
+	margin-top: 80px;
+	margin-left: 40px;
+}
+
+            </style>
+            <script>
+            var i=0;
+            var j=0;
+            var d=0;
+            var h=0;
+            var s=0;
+            function sitstand()
+            {
+                if(i==0)
+                {
+                    document.getElementById("switch").src = "hd883.jpg";
+                    i=1;
+                }
+                else
+                {
+                    document.getElementById("switch").src = "hd881.png";
+                    i=0;
+                }
+            }
+            function dog()
+            {
+                
+                if(j==0)
+                {
+                    document.getElementById("pet").src = "bmwimg.png";
+                    j=1;
+                }
+                else
+                {
+                    document.getElementById("pet").src = "bmwimg1.png";
+                    j=0;
+                }
+            }
+            function dogrun()
+            {
+                if(d==0)
+                {
+                    document.getElementById("run").src = "reimg.png";
+                    d=1;
+                }
+                else if(d==1)
+                {
+                    document.getElementById("run").src = "reimg1.png";
+                    d=0;
+                }
+                
+            }
+            function eatingdog()
+            {
+                if(h==0)
+                {
+                    document.getElementById("eat").src="triimg.png";
+                    h=1;
+                }
+
+                else
+                {
+                    document.getElementById("eat").src="triimg1.png";
+
+                    h=0;
+                }
+
+            }
+
+            function handshake()
+            {
+                if(s==0)
+
+                {
+                    document.getElementById("shake").src="ducatiimg.png";
+                    s=1;
+                }
+                else
+                {
+                    document.getElementById("shake").src="ducatiimg1.png";
+                    s=0;
+                }
+            }
+        </script>
+</head>
+<body>
+    
+    <div >
+        
+       <p> <a class="txt" href="index.html">Mouse Events</a> </p>
+          
+    </div>
+
+    <center> 
+	
+	<div class="img">
+	<div class="uid1" > 
+	   <img src="hdlogo.jpeg"  onclick="sitstand()" id="switch" style="width:100%">
+	    <div class="container">
+	   Left Click on Logo
+	   </div>
+	</div>
+	<div class="uid1"> 
+	  <img src="bmwlogo.jpeg" onmouseenter="dog()" onmouseleave="dog()" id="pet" style="width:100%"> </a>
+	<div class="container">
+	    Hover on logo
+	</div>
+	</div>
+	<div class="uid1"> 
+	   <img src="ducatilogo.png" ondblclick="handshake()" id="shake" style="width:100%"> </a>
+	<div class="container">
+	    Double Click On Logo
+	</div>
+	</div>
+	<div class="uid1"> 
+	   <img src="trilogo.png" contextmenu="eatingdog1" oncontextmenu="eatingdog()" id="eat" style="width:100%"> </a>
+	<div class="container">
+	    Right Click on Logo
+	</div>
+	</div>
+	</div>
+	<div class="img">
+	<div class="uid1" > 
+	    <img src="relogo.png" onmousedown="dogrun()" onmouseup="dogrun()" id="run" style="width:100%"> </a>
+	<div class="container">
+	   Move Mouse on Logo
+	</div>
+	</div>
+    </center>
+</body>
+</html>
